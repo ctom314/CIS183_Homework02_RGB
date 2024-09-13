@@ -86,6 +86,9 @@ public class MainActivity extends AppCompatActivity
         
         fillListView();
 
+        // Make sure the status bar is a static color (Slightly darker purple than header)
+        getWindow().setStatusBarColor(Color.parseColor("#4900B0"));
+
     }
 
     // Save the color
