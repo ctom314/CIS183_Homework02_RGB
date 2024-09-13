@@ -14,11 +14,14 @@ To use this app:
 - Tap on a saved color to load it.
 
 ## Demo
-![View the Demo on YouTube](https://www.youtube.com/watch?v=WIH3qpyIWxA)
+[![View the Demo on YouTube](https://img.youtube.com/vi/WIH3qpyIWxA/0.jpg)](https://www.youtube.com/watch?v=WIH3qpyIWxA)
 
 ## Screenshots
 ### Startup
+![RGBApp_Startup_S](https://github.com/user-attachments/assets/4da0b7af-2417-4edd-a5e0-71449bf62979)
 
 ### Background color change
+![RGBApp_BG_S](https://github.com/user-attachments/assets/7ec8c5a0-2575-4659-ba60-e6916d48f9c0)
 
 ### Saving colors
+![RGBApp_ColorList_S](https://github.com/user-attachments/assets/6e0a952e-cd2a-42cb-9b4b-be8e76524df2)
