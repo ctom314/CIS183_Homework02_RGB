@@ -2,18 +2,208 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/bg_v_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbar_v_headerBG"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:background="#673AB7"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
+        android:id="@+id/tv_v_headerTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginBottom="21dp"
+        android:text="Homework02_RGB"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tbar_v_headerBG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/sb_v_redBar"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="102dp"
+        android:max="255"
+        android:progressTint="#00BCD4"
+        android:thumbTint="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_v_blueLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_v_headerTitle" />
+
+    <TextView
+        android:id="@+id/tv_v_redLabel"
+        android:layout_width="43dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginBottom="72dp"
+        android:text="Red:"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/sb_v_greenBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_v_headerTitle" />
+
+    <SeekBar
+        android:id="@+id/sb_v_greenBar"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="64dp"
+        android:max="255"
+        android:progressTint="#00BCD4"
+        android:thumbTint="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="@+id/sb_v_blueBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sb_v_redBar" />
+
+    <TextView
+        android:id="@+id/tv_v_greenLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="180dp"
+        android:text="Green:"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/sb_v_blueBar"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="19dp"
+        android:max="255"
+        android:progressTint="#00BCD4"
+        android:thumbTint="#00BCD4"
+        app:layout_constraintBottom_toTopOf="@+id/tv_v_hexLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_v_blueLabel" />
+
+    <TextView
+        android:id="@+id/tv_v_blueValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="7dp"
+        android:text="255"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/sb_v_blueBar"
+        app:layout_constraintEnd_toEndOf="@+id/sb_v_blueBar" />
+
+    <TextView
+        android:id="@+id/tv_v_blueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="47dp"
+        android:text="Blue:"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_v_greenLabel" />
+
+    <TextView
+        android:id="@+id/tv_v_greenValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="8dp"
+        android:text="255"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/sb_v_greenBar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_v_redValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="8dp"
+        android:text="255"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/sb_v_redBar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_v_hexLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="10dp"
+        android:text="HEX Value:"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_v_saveColor"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_v_hexValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="#FFFFFF"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_v_saveColor"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_v_saveColor"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:backgroundTint="#673AB7"
+        android:text="SAVE COLOR"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/lv_v_savedColors"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_v_saveColor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_v_cc_redLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="13dp"
+        android:text="Red:"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_v_cc_greenLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="87dp"
+        android:text="Green:"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_v_cc_blueValue"
+        app:layout_constraintStart_toStartOf="@+id/tv_v_cc_redLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_v_cc_blueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="172dp"
+        android:text="Blue:"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_v_cc_hexLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="79dp"
+        android:text="HEX:"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_v_cc_redValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="6dp"
+        android:text="255"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_v_cc_redLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tv_v_cc_redLabel" />
+
+    <TextView
+        android:id="@+id/tv_v_cc_greenValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="255"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_v_cc_greenLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tv_v_cc_greenLabel" />
+
+    <TextView
+        android:id="@+id/tv_v_cc_blueValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="255"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_v_cc_blueLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tv_v_cc_blueLabel" />
+
+    <TextView
+        android:id="@+id/tv_v_cc_hexValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="FFFFFF"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_v_cc_hexLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tv_v_cc_hexLabel" />
+</androidx.constraintlayout.widget.ConstraintLayout>
