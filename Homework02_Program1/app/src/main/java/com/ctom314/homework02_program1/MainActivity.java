@@ -367,7 +367,7 @@ public class MainActivity extends AppCompatActivity
         });
     }
 
-    // Helper function for getting RGB values from the TextViews and storing them as ints
+    // Get RGB values from the TextViews and storing them as ints
     private int getRGBValue(TextView tv)
     {
         return Integer.parseInt(tv.getText().toString());
